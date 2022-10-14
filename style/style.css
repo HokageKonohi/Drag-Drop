@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fredoka One',cursive;
+    background: linear-gradient(180deg, rgb(50, 0, 0), rgb(138, 0, 0), rgb(194, 18, 18));
+    background-repeat: no-repeat;
+    animation:inimation 1.5s linear infinite ;
+    height: 100vh;
+    display: flex;
+    padding-top: 5rem;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.col-header{
+    width: 150px;
+    box-shadow: 4px 4px 9px #566;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    color: #fff;
+}
+
+.item {
+    width: 150px;
+    height: 66px;
+    border-radius: 20px;
+    background: rgb(255, 255, 0);
+    padding: 0.8rem 1rem;
+    color: #566;
+    text-align: center;
+    cursor: grab;
+    transition: all .5s;
+}
+.item:hover{
+    background: linear-gradient(150deg, rgb(244, 251, 177), rgb(246, 254, 4), rgb(27, 235, 166));
+    animation:inimation 1.5s linear infinite ;
+    color: rgb(0, 0, 0);
+}
+
+.item:active{
+    cursor: drabbing;
+}
+
+.placeholder{
+    width: 150px;
+    height: 66px;
+}
+
+.start{
+    background: linear-gradient(150deg, rgb(214, 235, 27), rgb(114, 235, 27), rgb(27, 235, 166));
+    animation:inimation 1.5s linear infinite ;
+}
+
+.progress{
+    background: linear-gradient(150deg, rgb(248, 173, 198), rgb(249, 138, 255), rgb(255, 22, 243));
+    animation:inimation 1.5s linear infinite ;
+
+}
+
+.done{
+    background: linear-gradient(150deg, rgb(27, 235, 207), rgb(27, 83, 235), rgb(235, 27, 235));
+    animation:inimation 1.5s linear infinite ;
+
+}
+
+
+@keyframes inimation{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+.hold{
+    background: rgba(255, 255, 255, 0.69);
+}
+.hide{
+    display: none;
+}
+
+.hovered{
+
+    border-top: 2px solid rgba(225, 255, 0, 0.253);
+}
